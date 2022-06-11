@@ -1,10 +1,12 @@
 # Reward Side-Channels
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Jozdien/reward-side-channels/blob/main/Reward_Side_Channels.ipynb)
+
 ## To-Do List
 
 1. Set up all the dependencies for running SpinningUp on Colab.  [Check reference 3](#references).
 2. Test setting up model checkpoints and storing data to Drive automatically to account for runtime errors or pauses (run some small model with a lot of steps).  [Check reference 5](#references).
-3. These two steps should be independent enough of the other to do parallelly (I'm not sure about this, if it starts to seem otherwise stop trying to do them separately __immediately__)
+3. These two steps should be independent enough of the other to do parallelly (I'm not sure about this, if it starts to seem otherwise stop trying to do them separately __immediately__).
     1. Create modified lunarlander environment.  I think we can do better than the changes we made earlier - at the very least, we'll need to discuss properly what both rewards are, and whether they're different enough.  It might also be possible to implement the changes we need in the same env class, with flags passed as parameters at call time to decide what reward.
     2. Building the RL agent
         1. Figure out the architecture of the model, especially with needing these many parameters including the decision transformer. [Check reference 4](#references).
