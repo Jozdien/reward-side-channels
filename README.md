@@ -4,6 +4,8 @@
 
 ## To-Do List
 
+Before even beginning with this, read [Risks from Learned Optimization](https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB) (specifically the section linked in [[2]](#ref-2)).
+
 1. Set up all the dependencies for running SpinningUp on Colab.  [[3]](#ref-3).
 2. Test setting up model checkpoints and storing data to Drive automatically to account for runtime errors or pauses (run some small model with a lot of steps).  [[5]](#ref-5).
 3. These two steps should be independent enough of the other to do parallelly (I'm not sure about this, if it starts to seem otherwise stop trying to do them separately __immediately__).
