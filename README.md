@@ -31,4 +31,4 @@ Before even beginning with this, read [Risks from Learned Optimization](https://
 
 5. [Colab reference for saving and loading checkpoints - TensorFlow](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/save_and_load.ipynb) <span id="ref-5"></span>
 
-6.[Colab reference for saving and loading checkpoints - PyTorch](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/9e9be5fea5bc1cdd5fd8f2305b475f16/saving_and_loading_a_general_checkpoint.ipynb)<span id="ref-6"></span>
+6. [Colab reference for saving and loading checkpoints - PyTorch](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/9e9be5fea5bc1cdd5fd8f2305b475f16/saving_and_loading_a_general_checkpoint.ipynb)<span id="ref-6"></span>
