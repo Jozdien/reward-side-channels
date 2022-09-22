@@ -11,7 +11,7 @@ Before even beginning with this, read [Risks from Learned Optimization](https://
 3. These two steps should be independent enough of the other to do parallelly (I'm not sure about this, if it starts to seem otherwise stop trying to do them separately __immediately__).
     1. Create modified lunarlander environment.  I think we can do better than the changes we made earlier - at the very least, we'll need to discuss properly what both rewards are, and whether they're different enough.  It might also be possible to implement the changes we need in the same env class, with flags passed as parameters at call time to decide what reward.
     2. Building the RL agent
-        1. Figure out the architecture of the model, especially with needing these many parameters including the decision transformer. [[4]](#ref-4).
+        1. Figure out the architecture of the model, especially with needing these many parameters.  If having a normal RL policy like PPO with a transformer included is a coherent idea, we do that, else we stick to decision transformers. [[4]](#ref-4).
             1. Get the Colab paid tier.
             2. Figure out how many parameters are actually feasible, even on the highest paid tier (we can settle for the long runs taking a few days, but not more than that).
         2. For the love of everything good and holy, iteratively test with tiny runs after adding each component (eg, after making the model slightly bigger) so we don't have to figure out what's going wrong after adding everything together.
