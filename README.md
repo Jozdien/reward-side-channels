@@ -7,7 +7,7 @@
 Before even beginning with this, read [Risks from Learned Optimization](https://www.alignmentforum.org/s/r9tYkB2a8Fp4DN8yB) (specifically the section linked in [[2]](#ref-2)).
 
 1. ~~Set up all the dependencies for running SpinningUp on Colab.  [[3]](#ref-3).~~ - Amrita
-2. ~~Test setting up model checkpoints and storing data to Drive automatically to account for runtime errors or pauses (run some small model with a lot of steps).  [[5]](#ref-5) [[6]](#ref-6).~~- Amrita
+2. ~~Test setting up model checkpoints and storing data to Drive automatically to account for runtime errors or pauses (run some small model with a lot of steps).  [[5]](#ref-5) [[6]](#ref-6)[[7]](#ref-7).~~- Amrita
 3. These two steps should be independent enough of the other to do parallelly (I'm not sure about this, if it starts to seem otherwise stop trying to do them separately __immediately__).
     1. Create modified lunarlander environment.  I think we can do better than the changes we made earlier - at the very least, we'll need to discuss properly what both rewards are, and whether they're different enough.  It might also be possible to implement the changes we need in the same env class, with flags passed as parameters at call time to decide what reward.
     2. Building the RL agent
@@ -29,6 +29,7 @@ Before even beginning with this, read [Risks from Learned Optimization](https://
 
 4. [Code for Decision Transformer in RL](https://github.com/nikhilbarhate99/min-decision-transformer) <span id="ref-4"></span>
 
-5. [Colab reference for saving and loading checkpoints - TensorFlow](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/save_and_load.ipynb) <span id="ref-5"></span>
+5. [Colab reference for saving and loading checkpoints - TensorFlow (SpinningUp)](https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/keras/save_and_load.ipynb) <span id="ref-5"></span>
 
-6. [Colab reference for saving and loading checkpoints - PyTorch](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/9e9be5fea5bc1cdd5fd8f2305b475f16/saving_and_loading_a_general_checkpoint.ipynb)<span id="ref-6"></span>
+6. [Colab reference for saving and loading checkpoints - PyTorch (SpinningUp)](https://colab.research.google.com/github/pytorch/tutorials/blob/gh-pages/_downloads/9e9be5fea5bc1cdd5fd8f2305b475f16/saving_and_loading_a_general_checkpoint.ipynb)<span id="ref-6"></span>
+7. [SB3 Documentation relevant to Checkpoints](https://stable-baselines3.readthedocs.io/en/master/guide/callbacks.html#callback-collection) <span id="ref-7"></span>
